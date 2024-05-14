@@ -26,7 +26,6 @@ Testing the C Program for the desired output.
 ## C Program that illustrate communication between two process using unnamed pipes using Linux API system calls
 
 ```
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<sys/types.h> 
@@ -82,33 +81,22 @@ n=read(rfd,buff,2000);
 buff[n]='\0';
 printf("THE RESULTS OF CLIENTS ARE ...... \n"); write(1,buff,n);
 }
-
 ```
 
 
 
 ## OUTPUT
-```
-cat > hello.txt
-Hello world
-to check pipe
-```
 
-```
-$ gcc -o pipe.o pipe.c
-$ ./pipe.o
 
-ENTER THE FILE NAME :simple.txt
-CLIENT SENDING THE REQUEST .... PLEASE WAIT
-THE RESULTS OF CLIENTS ARE ...... 
-Hello world
-to check pipe
+![os](https://github.com/nicknikesh/Linux-IPC-Pipes/assets/145633284/f5299003-4d8d-423d-a96c-0fc4d601ac24)
 
-```
+
+
+
 
 ## C Program that illustrate communication between two process using named pipes using Linux API system calls
-```
 
+```
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -121,25 +109,12 @@ exit(EXIT_SUCCESS);
 }
 
 ```
-
+![Screenshot 2024-04-06 082932](https://github.com/gururaghav2925/Linux-IPC-Pipes/assets/151489500/686a82e2-38fb-41dd-ac55-0a6e628bca05)
 
 
 
 ## OUTPUT
-```
-$ gcc -o fifo.o fifo.c
-$./fifo.o
 
-FIFO created
-```
-
-```
-$ ls -l /tmp/my_fifo
-
-
-prwxr-xr-x    1 root     root             0 Mar 27 14:45 /tmp/my_fifo
-
-```
 
 # RESULT:
 The program is executed successfully.
